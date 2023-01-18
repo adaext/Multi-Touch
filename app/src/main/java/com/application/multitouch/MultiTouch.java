@@ -83,7 +83,6 @@ public class MultiTouch extends Activity implements OnTouchListener {
                 }
 
                 if (mode == Mode.ROTATE) {
-                    // matrix.set(savedMatrix);
                     float deltaAngle = currentRotateAngle - previousRotateAngle;
                     previousRotateAngle = currentRotateAngle;
                     matrix.postRotate(deltaAngle, originMidPoint.x, originMidPoint.y);
